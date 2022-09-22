@@ -15,4 +15,7 @@ export class ComponentOneComponent implements OnInit {
   toComponentTwo() {
     this.router.navigate(['ComponentTwo']);
   }
+  toToDoWork(){
+    this.router.navigate(['ToDoWork']);
+  }
 }

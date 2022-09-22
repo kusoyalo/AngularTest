@@ -8,13 +8,17 @@ import { ComponentOneComponent } from './programs/component-one/component-one.co
 import { ComponentTwoComponent } from './programs/component-two/component-two.component';
 import { ComponentThreeComponent } from './programs/component-three/component-three.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TodoworkComponent } from './programs/todowork/todowork.component';
+import { ItemComponent } from './programs/item/item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentOneComponent,
     ComponentTwoComponent,
-    ComponentThreeComponent
+    ComponentThreeComponent,
+    TodoworkComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
