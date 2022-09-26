@@ -21,4 +21,7 @@ export class ComponentOneComponent implements OnInit {
   toReactiveForms(){
     this.router.navigate(['ToReactiveForms']);
   }
+  toTemplateDrivenForms(){
+    this.router.navigate(['ToTemplateDrivenForms']);
+  }
 }
