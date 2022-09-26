@@ -5,13 +5,15 @@ import { ComponentOneComponent } from './programs/component-one/component-one.co
 import { ComponentTwoComponent } from './programs/component-two/component-two.component';
 import { ComponentThreeComponent } from './programs/component-three/component-three.component';
 import { TodoworkComponent } from './programs/todowork/todowork.component';
+import { ReactiveFormsComponent } from './programs/reactive-forms/reactive-forms.component';
 
 const routes: Routes = [
   { path: '', component: ComponentOneComponent },
   { path: 'ComponentOne', component: ComponentOneComponent },
   { path: 'ComponentTwo', component: ComponentTwoComponent },
   { path: 'ComponentThree', component: ComponentThreeComponent },
-  { path: 'ToDoWork', component: TodoworkComponent }
+  { path: 'ToDoWork', component: TodoworkComponent },
+  { path: 'ToReactiveForms', component: ReactiveFormsComponent }
 ];
 
 @NgModule({

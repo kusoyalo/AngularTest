@@ -18,4 +18,7 @@ export class ComponentOneComponent implements OnInit {
   toToDoWork(){
     this.router.navigate(['ToDoWork']);
   }
+  toReactiveForms(){
+    this.router.navigate(['ToReactiveForms']);
+  }
 }
