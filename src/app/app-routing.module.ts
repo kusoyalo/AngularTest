@@ -6,7 +6,9 @@ import { ComponentTwoComponent } from './programs/component-two/component-two.co
 import { ComponentThreeComponent } from './programs/component-three/component-three.component';
 import { TodoworkComponent } from './programs/todowork/todowork.component';
 import { ReactiveFormsComponent } from './programs/reactive-forms/reactive-forms.component';
+import { ReactiveFormsValidateComponent } from './programs/reactive-forms-validate/reactive-forms-validate.component';
 import { TemplateDrivenFormsComponent } from './programs/template-driven-forms/template-driven-forms.component';
+import { TemplateDrivenFormsValidateComponent } from './programs/template-driven-forms-validate/template-driven-forms-validate.component';
 
 const routes: Routes = [
   { path: '', component: ComponentOneComponent },
@@ -15,7 +17,9 @@ const routes: Routes = [
   { path: 'ComponentThree', component: ComponentThreeComponent },
   { path: 'ToDoWork', component: TodoworkComponent },
   { path: 'ToReactiveForms', component: ReactiveFormsComponent },
-  { path: 'ToTemplateDrivenForms', component: TemplateDrivenFormsComponent }
+  { path: 'ToReactiveFormsValidate', component: ReactiveFormsValidateComponent },
+  { path: 'ToTemplateDrivenForms', component: TemplateDrivenFormsComponent },
+  { path: 'ToTemplateDrivenFormsValidate', component: TemplateDrivenFormsValidateComponent }
 ];
 
 @NgModule({

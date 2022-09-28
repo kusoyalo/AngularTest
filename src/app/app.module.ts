@@ -16,6 +16,11 @@ import { NameEditorComponent } from './programs/name-editor/name-editor.componen
 import { ReactiveFormsComponent } from './programs/reactive-forms/reactive-forms.component';
 import { ProfileEditorComponent } from './programs/profile-editor/profile-editor.component';
 import { TemplateDrivenFormsComponent } from './programs/template-driven-forms/template-driven-forms.component';
+import { TemplateDrivenFormsValidateComponent } from './programs/template-driven-forms-validate/template-driven-forms-validate.component';
+import { ReactiveFormsValidateComponent } from './programs/reactive-forms-validate/reactive-forms-validate.component';
+import { ForbiddenNameDirective } from './shared/forbidden-name.directive';
+import { IdentityRevealedDirective } from './shared/identity-revealed.directive';
+import { AlterEgoDirective } from './shared/alter-ego.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { TemplateDrivenFormsComponent } from './programs/template-driven-forms/t
     NameEditorComponent,
     ReactiveFormsComponent,
     ProfileEditorComponent,
-    TemplateDrivenFormsComponent
+    TemplateDrivenFormsComponent,
+    TemplateDrivenFormsValidateComponent,
+    ReactiveFormsValidateComponent,
+    ForbiddenNameDirective,
+    IdentityRevealedDirective,
+    AlterEgoDirective
   ],
   imports: [
     BrowserModule,
