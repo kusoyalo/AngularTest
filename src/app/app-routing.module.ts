@@ -9,6 +9,7 @@ import { ReactiveFormsComponent } from './programs/reactive-forms/reactive-forms
 import { ReactiveFormsValidateComponent } from './programs/reactive-forms-validate/reactive-forms-validate.component';
 import { TemplateDrivenFormsComponent } from './programs/template-driven-forms/template-driven-forms.component';
 import { TemplateDrivenFormsValidateComponent } from './programs/template-driven-forms-validate/template-driven-forms-validate.component';
+import { DynamicFormInterceptComponent } from './programs/dynamic-form-intercept/dynamic-form-intercept.component';
 
 const routes: Routes = [
   { path: '', component: ComponentOneComponent },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'ToReactiveForms', component: ReactiveFormsComponent },
   { path: 'ToReactiveFormsValidate', component: ReactiveFormsValidateComponent },
   { path: 'ToTemplateDrivenForms', component: TemplateDrivenFormsComponent },
-  { path: 'ToTemplateDrivenFormsValidate', component: TemplateDrivenFormsValidateComponent }
+  { path: 'ToTemplateDrivenFormsValidate', component: TemplateDrivenFormsValidateComponent },
+  { path: 'ToDynamicForm', component: DynamicFormInterceptComponent }
 ];
 
 @NgModule({

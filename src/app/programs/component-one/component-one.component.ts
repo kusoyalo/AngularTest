@@ -30,4 +30,7 @@ export class ComponentOneComponent implements OnInit {
   toTemplateDrivenFormsValidate(){
     this.router.navigate(['ToTemplateDrivenFormsValidate']);
   }
+  toDynamicForm(){
+    this.router.navigate(['ToDynamicForm']);
+  }
 }

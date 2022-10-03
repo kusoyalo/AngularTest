@@ -21,6 +21,9 @@ import { ReactiveFormsValidateComponent } from './programs/reactive-forms-valida
 import { ForbiddenNameDirective } from './shared/forbidden-name.directive';
 import { IdentityRevealedDirective } from './shared/identity-revealed.directive';
 import { AlterEgoDirective } from './shared/alter-ego.directive';
+import { DynamicFormComponent } from './programs/dynamic-form/dynamic-form.component';
+import { DynamicFormQuestionComponent } from './programs/dynamic-form-question/dynamic-form-question.component';
+import { DynamicFormInterceptComponent } from './programs/dynamic-form-intercept/dynamic-form-intercept.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { AlterEgoDirective } from './shared/alter-ego.directive';
     ReactiveFormsValidateComponent,
     ForbiddenNameDirective,
     IdentityRevealedDirective,
-    AlterEgoDirective
+    AlterEgoDirective,
+    DynamicFormComponent,
+    DynamicFormQuestionComponent,
+    DynamicFormInterceptComponent
   ],
   imports: [
     BrowserModule,
