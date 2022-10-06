@@ -24,6 +24,14 @@ import { AlterEgoDirective } from './shared/alter-ego.directive';
 import { DynamicFormComponent } from './programs/dynamic-form/dynamic-form.component';
 import { DynamicFormQuestionComponent } from './programs/dynamic-form-question/dynamic-form-question.component';
 import { DynamicFormInterceptComponent } from './programs/dynamic-form-intercept/dynamic-form-intercept.component';
+import { MessagesComponent } from './programs/messages/messages.component';
+import { HeroesComponent } from './programs/heroes/heroes.component';
+import { HeroSearchComponent } from './programs/hero-search/hero-search.component';
+import { HeroDetailComponent } from './programs/hero-detail/hero-detail.component';
+import { DashboardComponent } from './programs/dashboard/dashboard.component';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './programs/in-memory-data.service';
+import { TourOfHeroesComponent } from './programs/tour-of-heroes/tour-of-heroes.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +52,13 @@ import { DynamicFormInterceptComponent } from './programs/dynamic-form-intercept
     AlterEgoDirective,
     DynamicFormComponent,
     DynamicFormQuestionComponent,
-    DynamicFormInterceptComponent
+    DynamicFormInterceptComponent,
+    MessagesComponent,
+    HeroesComponent,
+    HeroSearchComponent,
+    HeroDetailComponent,
+    DashboardComponent,
+    TourOfHeroesComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +67,10 @@ import { DynamicFormInterceptComponent } from './programs/dynamic-form-intercept
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    )
   ],
   providers: [ProgramsService],
   bootstrap: [AppComponent]

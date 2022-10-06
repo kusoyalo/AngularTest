@@ -33,4 +33,7 @@ export class ComponentOneComponent implements OnInit {
   toDynamicForm(){
     this.router.navigate(['ToDynamicForm']);
   }
+  toTourOfHeroes(){
+    this.router.navigate(['ToTourOfHeroes']);
+  }
 }

@@ -10,6 +10,10 @@ import { ReactiveFormsValidateComponent } from './programs/reactive-forms-valida
 import { TemplateDrivenFormsComponent } from './programs/template-driven-forms/template-driven-forms.component';
 import { TemplateDrivenFormsValidateComponent } from './programs/template-driven-forms-validate/template-driven-forms-validate.component';
 import { DynamicFormInterceptComponent } from './programs/dynamic-form-intercept/dynamic-form-intercept.component';
+import { TourOfHeroesComponent } from './programs/tour-of-heroes/tour-of-heroes.component';
+import { DashboardComponent } from './programs/dashboard/dashboard.component';
+import { HeroesComponent } from './programs/heroes/heroes.component';
+import { HeroDetailComponent } from './programs/hero-detail/hero-detail.component';
 
 const routes: Routes = [
   { path: '', component: ComponentOneComponent },
@@ -21,7 +25,11 @@ const routes: Routes = [
   { path: 'ToReactiveFormsValidate', component: ReactiveFormsValidateComponent },
   { path: 'ToTemplateDrivenForms', component: TemplateDrivenFormsComponent },
   { path: 'ToTemplateDrivenFormsValidate', component: TemplateDrivenFormsValidateComponent },
-  { path: 'ToDynamicForm', component: DynamicFormInterceptComponent }
+  { path: 'ToDynamicForm', component: DynamicFormInterceptComponent },
+  { path: 'ToTourOfHeroes', component: TourOfHeroesComponent },
+  { path: 'dashboard',component: DashboardComponent },
+  { path: 'detail/:id',component: HeroDetailComponent },
+  { path: 'heroes',component: HeroesComponent }
 ];
 
 @NgModule({
